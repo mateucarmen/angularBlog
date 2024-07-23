@@ -1,0 +1,10 @@
+<app-header></app-header>
+@if (selectedPost) {
+<h2>{{ selectedPost.title }}</h2>
+<p class="date">{{ selectedPost.publishDate}}</p>
+<p class="author">Por: {{ selectedPost.author }}</p>
+<p class="text">{{ selectedPost.text}}</p>
+} @else {
+    <p>No hay artículos para esta búsqueda</p>
+}
+<app-footer></app-footer>

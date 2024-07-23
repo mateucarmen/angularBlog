@@ -1,0 +1,52 @@
+section {
+    margin: 40px;
+
+    .post-list {
+        width: 100%;
+        font-family: sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+
+        .post-item {
+            width: 350px;
+            height: 200px;
+            padding: 20px;
+            transition: all 0.4s;
+
+            h2 {
+                color:#5564eb;
+            }
+
+            .date {
+                color: grey;
+                font-size: small;
+            }
+
+            .author {
+                color: black;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: small;
+                font-weight: bold;
+            }
+
+            .text {
+                color: black;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .post-link {
+                text-decoration: none;
+            }
+        }
+
+        .post-item:hover {
+            background-color: #f8f9fa; 
+            border-color: #5564eb;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+form {
+    width: 90%;
+    font-family: sans-serif;
+    color: black;
+    padding: 20px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+        
+        fieldset {
+            border: none;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: larger;
+                font-weight: bolder;
+            }
+
+            input {
+                margin-top: 20px;
+            }
+
+            textarea {
+                margin-top: 20px;
+                height: 500px;
+            }
+            
+            .form-error {
+                color: red;
+                font-size: smaller;
+            }
+        }
+    }
+
+    .btn-create {
+        padding: 5px;
+        width: 200px;
+        left: 30%;
+        margin-left: 15px;
+        margin-top: 15px;
+        background-color: #5564eb; 
+        color: white;
+        font-family: sans-serif;
+        cursor: pointer;
+    }

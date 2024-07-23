@@ -1,0 +1,18 @@
+<app-header></app-header>
+<section>
+<ul class="post-list">
+@for (post of postService.posts; track post.id) {
+    <li class="post-item">
+        <a class="post-link" [routerLink]="post.id.toString()" routerLinkActive="router-link-active">
+        <div class="post-container">
+            <h2>{{ post.title }}</h2>
+            <p class="date">{{ post.publishDate}}</p>
+            <p class="author">Por: {{ post.author }}</p>
+            <p class="text">{{ post.text.substring(0, 100) }}...</p>
+        </div>
+    </a>
+    </li>
+}
+</ul>
+</section>
+<app-footer></app-footer>

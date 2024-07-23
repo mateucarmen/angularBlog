@@ -1,0 +1,14 @@
+
+div {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #5564eb, lightblue);
+
+
+    p {
+        font-family: sans-serif;
+        font-size: 20px;
+        color: white;
+        margin-left: 50px;
+    }
+}

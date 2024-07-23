@@ -1,0 +1,29 @@
+h2 {
+    margin-left: 70px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: #5564eb;
+}
+
+.date {
+    margin-left: 70px;
+    color: grey;
+    font-size: small;
+    font-family: sans-serif;
+}
+
+.author {
+    margin-left: 70px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: bold;
+}
+
+.text {
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-bottom: 300px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

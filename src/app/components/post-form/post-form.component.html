@@ -1,0 +1,48 @@
+<div class="form-container">
+    <form (submit)="createPost()" [formGroup]="postForm">
+    <fieldset>
+        <label for="title">Título:</label>
+        <input 
+        type="text" 
+        name="title" 
+        id="title" 
+        formControlName="title">
+        @if (title.invalid && title.touched) {
+            <p class="form-error">El campo "Título" es obligatorio</p>
+            }
+    </fieldset>
+    <fieldset>
+        <label for="author">Autor:</label>
+        <input 
+        type="text" 
+        name="author" 
+        id="author" 
+        formControlName="author">
+        @if (author.invalid && author.touched) {
+            <p class="form-error">El campo "Autor" es obligatorio</p>
+            }
+    </fieldset>
+    <fieldset>
+        <label for="date">Fecha:</label>
+        <input 
+        type="date" 
+        name="date" 
+        id="date" 
+        formControlName="publishDate">
+        @if (publishDate.invalid && publishDate.touched) {
+            <p class="form-error">El campo "Fecha" es obligatorio</p>
+            }
+    </fieldset>
+    <fieldset class="article">
+        <label for="article">Escribe aquí tu artículo:</label>
+        <textarea 
+        name="article" 
+        id="article" 
+        formControlName="text"></textarea>
+        @if (text.invalid && text.touched) {
+            <p class="form-error">El campo "Artículo" es obligatorio</p>
+            }
+    </fieldset>
+    <button class="btn-create" [disabled]="postForm.invalid">CREAR</button>
+    </form>
+</div>
